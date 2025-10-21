@@ -1,0 +1,68 @@
+[
+    {
+        "id": "1",
+        "name": "Crema facial humectante",
+        "price": 8800,
+        "category": "cosmeticos",
+        "description": "Crema humectante para el rostro con filtro UV.",
+        "imageUrl":"/images/crema-hum.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Crema para piernas",
+        "price": 4500,
+        "category": "cosmeticos",
+        "description": "Crema relajante para piernas cansadas.",
+        "imageUrl":"/images/crema-piernas.jpg"
+    },{
+        "id": "3",
+        "name": "Gel facial limpiador",
+        "price": 3800,
+        "category": "cosmeticos",
+        "description": "Gel limpiador para el rostro con AH.",
+        "imageUrl":"/images/crema-gel.jpg"
+    },{
+        "id": "4",
+        "name": "Crema reductora",
+        "price": 9800,
+        "category": "cosmeticos",
+        "description": "Crema reductora  y humectante para el cuerpo.",
+        "imageUrl":"/images/crema-cuerpo.jpg"
+    },{
+        "id": "5",
+        "name": "Colonia refrescante",
+        "price": 6300,
+        "category": "perfumes",
+        "description": "Colonia para todo el cuerpo despues del baño",
+        "imageUrl":"/images/colonia.jpg"
+    },{
+        "id": "6",
+        "name": "perfume femenino eclipse",
+        "price": 15800,
+        "category": "perfumes",
+        "description": "perfume floral frutal amaderado.",
+        "imageUrl":"/images/perfume-eclipse.png"
+    },{
+        "id": "7",
+        "name": "perfume hombre Legend",
+        "price": 18900,
+        "category": "perfumes",
+        "description": "perfume fougere ambarado edible",
+        "imageUrl":"/images/perfume-legend.jpg"
+    },{
+        "id": "8",
+        "name": "Perfume niños capibara",
+        "price": 8100,
+        "category": "perfumes",
+        "description": "perfume suave y frutal para chicos",
+        "imageUrl":"/images/perfume-capibara.png"
+    },{
+        "id": "9",
+        "name": "set de cuidado",
+        "price": 59200,
+        "category": "cosmeticos",
+        "description": "emulsion+locion+mascara+crema detox.",
+        "imageUrl":"/images/set-cuidado.jpg"
+    }
+
+]
