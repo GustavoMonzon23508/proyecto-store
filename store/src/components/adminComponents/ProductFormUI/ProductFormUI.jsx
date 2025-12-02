@@ -9,9 +9,9 @@ export const ProductFormUI = ({
   return (
     <section>
       <form className="product-form" onSubmit={onSubmit}>
-        <h2>Agregar producto</h2>
+        <h2>Agregar producto </h2>
         <div>
-          <label>Nombre:</label>
+          <label>Nombre: </label>
           <input
             type="text"
             name="name"
@@ -22,7 +22,7 @@ export const ProductFormUI = ({
           {errors.name && <p className="error">{errors.name}</p>}
         </div>
         <div>
-          <label>Precio:</label>
+          <label>Precio: </label>
           <input
             type="number"
             name="price"
@@ -44,7 +44,7 @@ export const ProductFormUI = ({
           {errors.category && <p className="error">{errors.category}</p>}
         </div>
         <div>
-          <label>Descripcion:</label>
+          <label>Descripcion: </label>
           <textarea
             name="description"
             value={product.description}
@@ -54,7 +54,7 @@ export const ProductFormUI = ({
           {errors.description && <p className="error">{errors.description}</p>}
         </div>
         <div>
-          <label>Imagen:</label>
+          <label>Imagen: </label>
           <input
             type="file"
             accept="image/*"
