@@ -1,39 +1,45 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
+
+import "./ItemDetailContainer.css";
 
 export const ItemDetailContainer = () => {
-    const [detail, setDetail] = useState({});
-    const { id } = useParams();
+  const [detail, setDetail] = useState({});
 
-    useEffect(() => {
-        fetch("/data/products.json")
-        .then((res)=> {
-            if (!res.ok){
-                throw new Error("Producto no hallado");
-            }
-            return res.json();
-        })
-        .then((data)=> {
-            const found = data.find(prod => prod.id === id)
-            if (found) {
-                setDetail(found);
+  //Desestructuramos el objeto del useParams
+  //la clave coincide con el nombre que definimos en Route-> :id
+  const { id } = useParams();
 
-            } else {
-                throw new Error ("producto no encontrado");
-            }
+  useEffect(() => {
+    fetch("/data/products.json")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("No se encontro el producto");
+        }
 
-        })
-        .catch(()=> {});
+        return res.json();
+      })
+      .then((data) => {
+        const found = data.find((p) => p.id === id); //Usamos el param para comparar el id del producto en el json
+        if (found) {
+          setDetail(found);
+        } else {
+          throw new Error("Producto no encontrado");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [id]);
 
-    },[id]);
-
-    return <main>
-            {Object.keys(detail).length ? (
-                <ItemDetail detail={detail} />
-            ) : (
-                <p>Cargando...</p>    
-            )}
+  return (
+    <main className="detail-container">
+      {Object.keys(detail).length ? (
+        <ItemDetail detail={detail} />
+      ) : (
+        <p>Cargando...</p>
+      )}
     </main>
- 
+  );
 };
