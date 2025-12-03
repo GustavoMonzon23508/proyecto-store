@@ -29,7 +29,7 @@ export const getProducts = async(category) => {
   return result;
 };
 //traer uno x id
-export const getProductsById = async (id) => {
+export const getProductById = async (id) => {
   const res = await fetch(`${BASE_URL}/${id}`);
   if (!res.ok) {
     throw new Error("Error al obtener producto");
