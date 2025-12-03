@@ -9,7 +9,6 @@ import { RutaProtegida } from "./components/RutaProtegida/RutaProtegida";
 import { Login } from "./components/Login/Login";
 import { MainLayout} from "./layouts/MainLayout";
 import { AdminLayout } from "./layouts/AdminLayout";
-import { Login } from "./components/Login/Login";
 
 
 function App() {
